@@ -1,8 +1,7 @@
 TweetPipe-Spark-Analyser
 ==============
-Spring Boot Kafka consumer application that consumes a stream of tweets from a Kafka topic (via Cloud Stream integration) 
-and, using Apache Spark, performs analysis on that stream.
-This application forms an alternative Apache Spark-based analysis tier of the TweetPipe Data Pipeline.
+Spring Boot Kafka consumer application that consumes and analyses a stream of tweets from a Kafka topic using Apache Spark Structured Streaming.
+This application forms an alternative, Apache Spark-based, analysis tier of the TweetPipe Data Pipeline.
 
 Technologies used
 --------------
@@ -11,4 +10,3 @@ Technologies used
 * Maven
 * Kafka
 * Apache Spark
-* Spring Cloud Stream
