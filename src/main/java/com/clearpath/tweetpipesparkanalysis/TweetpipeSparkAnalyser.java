@@ -52,7 +52,7 @@ public class TweetpipeSparkAnalyser {
         Dataset<Row> window = tweetAndTimestampDF
                 .withWatermark("timestamp", "1 minute")
                 .groupBy(
-                        window(col("timestamp"), "2 minutes", "1 minutes"),
+                        window(col("timestamp"), "4 minutes", "2 minutes"),
                         col("tweet.text"))
                 .count();
 
